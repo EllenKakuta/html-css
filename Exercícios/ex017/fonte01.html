@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family: 'Arial, Helvetica, sans-serif';
+            /*Medidas Absolutas
+            cm, mm, in(polegada), px, pt, pc(paica)
+            cm e mm apresentação fica diferente dependendo dos dispositivos
+            px tbm é complicado
+            pt e pc usado para papel e não telas (sites)
+
+           Medidas Relativas
+           em(altura M - M maiúsculo da fonte), ex(altura x - tamanho x da fonte), rem (fonte do body), vw (tamanho da view port - tamanho de tela, porcentagem ), vh(altura da view port), %''          
+           
+           USAR PX E EM
+           16px geralmente - 1em*/
+          
+
+           font-size: 16px; /*Normalmente o tamanho dos navegadores*/
+        }
+
+        h1{
+            /*font-family:'Courier New', Courier, monospace;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;*/
+
+            /*shorthand font (Simplifica)
+            -font-style -> font-weight -> font-size -> font-family*/
+
+            font: italic bolder 3em 'Courier New', Courier, monospace;
+        }
+
+        h2{
+            font: bold 2em 'Courier New';
+        }
+       
+    </style>
+</head>
+<body >
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, facilis recusandae corrupti voluptatum, cumque delectus praesentium illo ratione consequuntur adipisci fugit error commodi nesciunt at! Alias reiciendis mollitia similique illo.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid nemo officia odio ab autem eos quaerat voluptatibus dolorum modi possimus voluptate numquam sit consequuntur, minus alias molestiae id reprehenderit. Inventore.</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo explicabo architecto quam officiis aliquid dolorum, quod incidunt optio accusantium non vitae recusandae ex, dolorem nam minus iusto quae possimus expedita.</p>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1><!--adaptação do tamanho de tela-->
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminuoa o tamanho do seu navegador</p>
+
+    <picture><!--ordem precisa ser crescente-->
+        <source media="(max-width:750px)" srcset="imagens/foto-p.jpg" type="image/jpg">
+        <source media="(max-width:1050px)" srcset="imagens/foto-m.jpg" type="image/jpg">
+        <img src="imagens/foto-g.jpg" alt="imagem flexível">
+    </picture>
+    
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+     <!--mp3 wav ogg (tipos de audio) wav são muito pesados-->
+     <!-- ter o som nos 3 formatos e fazer o source, a ordem é importante -->
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/You're There - The Mini Vandals.mp3" type = "audio/mpeg">
+        <source src="midia/You're There - The Mini Vandals.ogg" type = "audio/ogg">
+        source src="midia/You're There - The Mini Vandals.wav" type = "audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio.<a href="midia/You're There - The Mini Vandals.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+   
+    </audio>
+</body>
+</html>
