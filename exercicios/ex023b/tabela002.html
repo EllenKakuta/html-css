@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    table{
+        width: 500px;
+        border-collapse: collapse;
+        position: relative; /*configuração comportamental, não altera nada na tabela*/
+    }
+
+    td,th{
+        border: 1px solid black;
+        padding: 10px;
+    }
+    caption{ /*legenda da tabela*/
+        font-size: 1.2em;
+        font-weight: bold;
+        padding: 10px;
+        background-color: lightgray;
+    }
+
+    thead, tfoot{
+        background-color: gray;
+        color: white;
+    }
+
+    thead>tr>th{ /*cabeçalho fixo*/
+        position: sticky;
+        top: -1px;
+        background-color: gray;
+    }
+
+    tbody >tr:nth-child(odd){ /*2n-1*/
+        background-color: lightgray;
+    }
+    tbody>tr:nth-child(even){ /*2n*/
+        background-color: rgba(194, 148, 148, 0.822);
+    }
+
+    td.num{
+        text-align: right;
+    }
+</style>
+
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        Anatomia para tabelas grandes
+        TABLE
+            THEAD
+                TR, TD(dado), TH(titulo)
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    
+    <table>
+        <caption>População de Algumas Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.873.064</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11.433.957</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.377.239</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9.557.071</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9.132.078</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8.622.865</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7.164.788</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"><strong>156.513.845</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores cum officiis harum inventore, perspiciatis, voluptas autem, voluptates accusantium consequuntur facere voluptatibus quasi commodi nihil magnam et mollitia atque magni. Aut. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores distinctio cumque a, obcaecati saepe autem quam, fugiat et reprehenderit error beatae similique corrupti iusto. Qui neque necessitatibus voluptates ullam assumenda? Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat aut ea soluta aliquam ad. Quam consequuntur, nulla nesciunt ipsam hic consequatur id nihil facere dolores deleniti excepturi fuga, dolor sint?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, suscipit nostrum quod ex ut voluptatum saepe vel id excepturi ullam, quos ab dicta libero. Molestiae quasi nam minus. Dicta, impedit.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint placeat, quaerat, sunt esse eveniet dolores optio qui illo inventore, fugit quis nulla nostrum incidunt? Deleniti tempore temporibus saepe earum nemo! Lorem ipsum dolor sit amet consectetur adipisicing elit. A earum harum, nesciunt veniam quis officia facilis sed, neque molestias vero minima id. Culpa fugit laborum sequi quisquam itaque omnis illo.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, possimus, vero, harum excepturi placeat explicabo amet dolor nam cum consectetur porro necessitatibus aliquam modi natus facere maxime veritatis odit tempora.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. A odit maiores suscipit velit, unde dolorum excepturi quia, voluptatibus, sint mollitia consequuntur accusamus labore autem! Maiores mollitia recusandae veniam autem odit.
+</p>
+</body>
+</html>
